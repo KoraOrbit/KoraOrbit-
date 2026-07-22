@@ -1,0 +1,5 @@
+# KoraOrbit — robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://koraorbit.example.com/sitemap.xml

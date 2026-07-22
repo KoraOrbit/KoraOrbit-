@@ -1,0 +1,48 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), interest-cohort=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'self' https://www.thesportsdb.com https://thesportsdb.com https://api.rss2json.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'
+
+# أصول ذات بصمة/إصدار ثابت أو نادرة التغيّر: تخزين مؤقت طويل الأمد في المتصفح/الـ CDN
+/css/*
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/js/*
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/icons/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/manifest.json
+  Cache-Control: public, max-age=86400
+
+/browserconfig.xml
+  Cache-Control: public, max-age=86400
+
+/sw.js
+  Cache-Control: no-cache
+
+# صفحة الـ HTML الرئيسية: لا تُخزّن طويلًا لأنها تحمل منطق التطبيق والبيانات الحيّة
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/offline.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# صفحات المباريات/الأخبار الثابتة: تُعاد توليدها في كل بناء، فتخزين مؤقت قصير
+# (مع إعادة تحقق عبر الشبكة) يوازن بين تقليل الطلبات وعرض بيانات محدّثة
+/match/*
+  Cache-Control: public, max-age=300, must-revalidate
+/news/*
+  Cache-Control: public, max-age=1800, must-revalidate
