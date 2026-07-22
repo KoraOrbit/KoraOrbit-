@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
-    <loc>https://koraorbit.example.com/</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://koraorbit.example.com/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://koraorbit.example.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://koraorbit.example.com/"/>
-    <changefreq>hourly</changefreq>
+    <loc>https://koraorbit.github.io/KoraOrbit-/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+
+    <xhtml:link rel="alternate" hreflang="ar" href="https://koraorbit.github.io/KoraOrbit-/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://koraorbit.github.io/KoraOrbit-/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://koraorbit.github.io/KoraOrbit-/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://koraorbit.github.io/KoraOrbit-/" />
   </url>
+
 </urlset>
